@@ -1,0 +1,260 @@
+a,
+ul {
+  list-style: none;
+  text-decoration: none;
+  color: royalblue;
+}
+
+li {
+  padding-right: 20px;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+blockquote,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+a,
+ul,
+li,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+}
+
+body {
+  font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif;
+  font-size: 13px;
+  background-color: #f2f2f2;
+  color: darkslategray;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  margin: 70px auto;
+  width: 90%;
+  height: 100vh;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.0975);
+  padding: 16px 30px;
+  position: fixed;
+  width: -moz-available;
+  width: -webkit-fill-available;
+  width: fill-available;
+  top: 0;
+}
+
+.nav__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content {
+  margin: 20px;
+}
+
+form {
+  padding: 20px;
+  -webkit-box-shadow: 1px 1px 3px;
+          box-shadow: 1px 1px 3px;
+  background-color: #ffffff;
+  color: darkslategray;
+}
+
+form h2 {
+  text-align: center;
+}
+
+@media (min-width: 35em) {
+  form {
+    width: 500px;
+  }
+}
+
+.form__section {
+  padding-bottom: 5px;
+  margin: 20px;
+}
+
+.form__section input {
+  width: -moz-available;
+  width: -webkit-fill-available;
+  width: fill-available;
+  margin-top: 10px;
+  padding: 10px;
+  border-style: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.form__section input:focus {
+  outline: none;
+  border-style: none;
+  border-bottom: 1px solid #521751;
+  background-color: #eee;
+}
+
+@media (max-width: 40em) {
+  .form__section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.signUp {
+  margin: 20px;
+  background-color: #47cf73;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif;
+  line-height: 1.2;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 10px 16px;
+  border-radius: 4px;
+  border: 3px solid transparent;
+  text-transform: uppercase;
+}
+
+.login {
+  margin: 20px;
+  background-color: #47cf73;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif;
+  line-height: 1.2;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 10px 16px;
+  border-radius: 4px;
+  border: 3px solid transparent;
+  text-transform: uppercase;
+}
+
+.log {
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.log__item {
+  margin: 20px;
+  background-color: #444857;
+  color: #ffffff;
+  font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif;
+  line-height: 1.2;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 10px 16px;
+  border-radius: 4px;
+  border: 3px solid transparent;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.log button:hover,
+.log button:active {
+  background-color: #521751;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */

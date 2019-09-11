@@ -1,0 +1,17 @@
+@mixin flex-container(
+	$display: flex,
+	$wrap: wrap,
+	$justify: center,
+	$align: center
+) {
+	display: $display;
+	flex-wrap: $wrap;
+	justify-content: $justify;
+	align-items: $align;
+}
+
+@mixin colors($bg: null, $text: null, $border: null) {
+	background-color: $bg;
+	color: $text;
+	border-color: $border;
+}

@@ -14,10 +14,8 @@ app.post('/users', (req, res) => {
     firstName,
     lastName,
     username,
-    age,
     password,
-    country,
-    gender
+    confirmPassword
   } = req.body;
 
   try {
@@ -27,15 +25,18 @@ app.post('/users', (req, res) => {
       });
     }
 
+    if (password !== confirmPassword) {
+      return res.status(500).json({
+        error: 'password and confirmPassword are not equal'
+      });
+    }
+
     let newUser = new User({
       email,
       firstName,
       lastName,
       username,
-      age,
-      password,
-      country,
-      gender
+      password
     });
 
     newUser.save().then(

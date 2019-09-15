@@ -23,19 +23,7 @@ const User = mongooose.model('Users', {
     minlength: 3,
     unique: true
   },
-  age: {
-    type: Number,
-    required: true
-  },
   password: {
-    type: String,
-    required: true
-  },
-  country: {
-    type: String,
-    required: true
-  },
-  gender: {
     type: String,
     required: true
   }

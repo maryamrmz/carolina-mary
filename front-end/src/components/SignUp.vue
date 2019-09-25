@@ -51,7 +51,6 @@
                     <div class="form__section input" :class="{invalid: $v.email.$error}">
                         <label for="email">Mail</label>
                         <input
-                            prepend-icon="email"
                             type="email"
                             id="email"
                             placeholder="example@test.com"
@@ -66,7 +65,6 @@
                     <div class="form__section input" :class="{invalid: $v.password.$error}">
                         <label for="password">Password</label>
                         <input
-                            prepend-icon="lock"
                             type="password"
                             id="password"
                             placeholder="**********"
@@ -193,14 +191,21 @@ export default {
                 confirmPassword: this.confirmPassword,
                 terms: this.terms
             };
-            this.$http.post("https://localhost:3000/users", this.formData).then(
-                response => {
-                    this.$router.push({ name: "home" });
-                },
-                error => {
-                    console.log(error);
-                }
-            );
+            console.log("here we are");
+            this.$http
+                .post("http://localhost:3000/users", formData)
+                .then(
+                    response => {
+                        // get body data
+                        this.$router.push({ name: "home" });
+                        this.someData = response.body;
+                        console.log(response);
+                    },
+                    response => {
+                        console.log("error");
+                        // error callback
+                    }
+                );
         }
     }
 };

@@ -25,6 +25,6 @@
     "express": "^4.17.3",
     "fastest-validator": "^0.6.17",
     "mongoose": "^5.7.5",
-    "validator": "^11.1.0"
+    "validator": "^13.7.0"
   }
 }

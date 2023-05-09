@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "dependencies": "0.0.1",
-    "peer": "^0.2.10",
+    "peer": "^1.0.0",
     "vue": "^2.5.11",
     "vue-resource": "^1.5.1",
     "vue-router": "^3.1.3",
